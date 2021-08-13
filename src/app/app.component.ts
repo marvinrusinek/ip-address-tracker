@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { VisitorsService } from './services/api.service';
+import { VisitorsService } from './services/visitors.service';
 
 declare let L: any;
 

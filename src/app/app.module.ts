@@ -5,7 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { VisitorsService } from './services/api.service';
+import { VisitorsService } from './services/visitors.service';
 
 @NgModule({
   declarations: [

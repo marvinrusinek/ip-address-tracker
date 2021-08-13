@@ -6,7 +6,6 @@ body {
     background-image: url("assets/images/pattern-bg.png");
     display: flex;
     flex-direction: column;
-    justify-content: center;
 
     h1 {
       color: white;
@@ -21,6 +20,7 @@ body {
       display: flex;
 
       input {
+        text-indent: 25px;
         flex-grow: 1;
         border-radius: 10px;
         border: 3px solid black;
@@ -79,7 +79,17 @@ body {
       }
     }
 
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    footer {
+      position: absolute;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 30px;
+      margin-left: 25%;
+    }
+
+    .attribution { font-size: 17px; font-weight: 800; color: black; }
+    .attribution a { color: turquoise; }
   }
 }

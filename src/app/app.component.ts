@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { VisitorsService } from './services/api.service';
 
-declare const L: any;
+declare let L: any;
 
 @Component({
   selector: 'app-root',
@@ -32,8 +32,8 @@ export class AppComponent implements OnInit {
     }
   }
 
-  leafMap(lati: any, long: any): any {
-    const map = L.map('map').setView([lati, long], 16);
+  leafMap(lat: any, long: any): any {
+    const map = L.map('map').setView([lat, long], 16);
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution:
@@ -42,7 +42,7 @@ export class AppComponent implements OnInit {
     map.zoomControl.remove();
     // Map Icon
     const blackIcon = L.icon({
-      iconUrl: '../../assets/images/icon-location.svg',
+      iconUrl: '../assets/images/icon-location.svg',
 
       iconSize: [38, 45], // size of the icon
       shadowSize: [50, 64], // size of the shadow

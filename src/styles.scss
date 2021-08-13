@@ -1,0 +1,85 @@
+body {
+  main {
+    width: 1200px;
+    height: 800px;
+    margin: 0 auto;
+    background-image: url("assets/images/pattern-bg.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+      color: white;
+      font-weight: 700;
+      text-align: center;
+      padding-top: 30px;
+    }
+
+    .search {
+      margin: 0 auto !important;
+      padding-bottom: 30px;
+      display: flex;
+
+      input {
+        flex-grow: 1;
+        border-radius: 10px;
+        border: 3px solid black;
+        width: 400px;
+        margin: 0 auto;
+        height: 40px;
+        background-color: white;
+      }
+
+      button {
+        margin-left: -30px;
+        background-color: black;
+        color: white;
+
+        img {
+          height: 40px;
+        }
+      }
+    }
+
+    .search-results {
+      clear: both;
+      width: 600px;
+      margin: 0 auto !important;
+      margin-top: 70px;
+      background-color: white;
+      border-radius: 10px;
+
+      ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        margin-left: 40px;
+
+        li {
+          margin-left: 15px;
+          padding-right: 15px;
+          display: flex;
+          flex-direction: column;
+          width: auto;
+          border-right: 1px solid black;
+
+          h3 {
+            color: gray;
+            margin-top: 0;
+          }
+
+          span {
+            color: black;
+          }
+
+          &:nth-child(4) {
+            border-right: none;
+          }
+        }
+      }
+    }
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  }
+}

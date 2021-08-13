@@ -1,0 +1,36 @@
+<main>
+  <h1>IP Address Tracker</h1>
+
+  <section class="search">
+    <input type="text" placeholder="Search for any IP address or domain&hellip;" [(ngModel)]="search" />
+    <button type="submit" (click)="onSubmit(search)"><img src="assets/images/icon-arrow.svg"></button>
+  </section>
+
+  <section class="search-results">
+    <ul>
+      <li>
+        <h5>IP Address</h5>
+        <span>{{ ipaddress }}</span>
+      </li>
+      <li>
+        <h5>Location</h5>
+        <span>{{ city }}, {{ country }} {{ postalCode }}</span>
+      </li>
+      <li>
+        <h5>Timezone</h5>
+        <span>{{ timezone }}</span>
+      </li>
+      <li>
+        <h5>ISP</h5>
+        <span>{{ isp }}</span>
+      </li>
+    </ul>
+  </section>
+
+  <div id="map"></div>
+
+  <footer class="attribution">
+    Challenge by&nbsp;<a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by&nbsp;<a href="mailto:marvinrusinek@gmail.com">Marvin Rusinek</a>.
+  </footer>
+</main>

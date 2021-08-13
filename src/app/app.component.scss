@@ -1,0 +1,96 @@
+main {
+  width: 1200px;
+  height: 800px;
+  margin: 0 auto;
+  background-image: url("../assets/images/pattern-bg.png");
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  .search {
+    margin: 0 auto !important;
+    padding-bottom: 30px;
+    display: flex;
+
+    input {
+      text-indent: 25px;
+      flex-grow: 1;
+      border-radius: 10px;
+      border: 3px solid black;
+      width: 400px;
+      margin: 0 auto;
+      height: 40px;
+      background-color: white;
+    }
+
+    button {
+      margin-left: -30px;
+      background-color: black;
+      color: white;
+
+      img {
+        height: 35px;
+      }
+    }
+  }
+
+  .search-results {
+    clear: both;
+    width: 600px;
+    margin: 0 auto !important;
+    margin-top: 70px;
+    background-color: white;
+    border-radius: 10px;
+
+    ul {
+      list-style-type: none;
+      display: flex;
+      flex-direction: row;
+      margin-top: 10px;
+      margin-left: -10px;
+
+      li {
+        margin-left: 15px;
+        padding-right: 15px;
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        border-right: 1px solid black;
+
+        h5 {
+          color: gray;
+          margin-top: 0;
+          text-align: center;
+        }
+
+        span {
+          color: black;
+          text-align: center;
+        }
+
+        &:nth-child(4) {
+          border-right: none;
+        }
+      }
+    }
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-left: 25%;
+  }
+
+  .attribution { font-size: 17px; font-weight: 800; color: black; }
+  .attribution a { color: turquoise; }
+}

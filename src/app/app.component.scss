@@ -115,7 +115,7 @@ main {
       display: flex;
 
       input {
-        text-indent: 25px;
+        text-indent: 15px;
         flex-grow: 1;
         width: 350px;
         margin-left: -120px;
@@ -136,12 +136,9 @@ main {
       width: 300px;
       height: fit-content;
       margin: 0 auto !important;
-      background-color: white;
-      border-radius: 10px;
       margin-left: 100px !important;
 
       ul {
-        list-style-type: none;
         display: flex;
         flex-direction: column;
         padding-top: 10px;
@@ -152,27 +149,21 @@ main {
           margin-top: 10px;
           margin-left: 15px;
           padding-right: 15px;
-          display: flex;
-          flex-direction: column;
           width: auto;
-
-          h6 {
-            color: gray;
-            margin-top: 0;
-            text-align: center;
-          }
-
-          span {
-            color: black;
-            text-align: center;
-            font-weight: bold;
-          }
         }
       }
     }
 
     #map {
       margin-top: -180px;
+      height: 500px;
+    }
+
+    footer {
+      z-index: 9999;
+      background-color: white;
+      margin-top: 80px;
+      margin-left: 0;
     }
   }
 }

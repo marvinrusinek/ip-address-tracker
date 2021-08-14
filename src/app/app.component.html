@@ -2,8 +2,10 @@
   <h1>IP Address Tracker</h1>
 
   <section class="search">
-    <input type="text" placeholder="Search for any IP address or domain&hellip;" [(ngModel)]="search" />
-    <button type="submit" (click)="onSubmit(search)"><img src="assets/images/icon-arrow.svg"></button>
+    <input type="text" placeholder="Search for any IP address or domain&hellip;" (keyup.enter)="onSubmit(search)" [(ngModel)]="search" />
+    <button type="submit" (click)="onSubmit(search)">
+      <img src="assets/images/icon-arrow.svg" height="16" width="16">
+    </button>
   </section>
 
   <section class="search-results">

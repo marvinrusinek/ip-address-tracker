@@ -100,3 +100,79 @@ main {
   .attribution { font-size: 17px; font-weight: 800; color: black; }
   .attribution a { color: turquoise; }
 }
+
+@media(max-width: 650px) {
+  main {
+    width: 650px;
+
+    h1 {
+      margin-left: -150px;
+    }
+
+    .search {
+      margin: 0 auto;
+      padding-bottom: 30px;
+      display: flex;
+
+      input {
+        text-indent: 25px;
+        flex-grow: 1;
+        width: 350px;
+        margin-left: -120px;
+      }
+
+      button {
+        margin-left: -30px;
+        background-color: black;
+        color: white;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+    }
+
+    .search-results {
+      clear: both;
+      z-index: 9999;
+      width: 300px;
+      height: fit-content;
+      margin: 0 auto !important;
+      background-color: white;
+      border-radius: 10px;
+      margin-left: 100px !important;
+
+      ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+        margin-top: 10px;
+        margin-left: -30px;
+
+        li {
+          margin-top: 10px;
+          margin-left: 15px;
+          padding-right: 15px;
+          display: flex;
+          flex-direction: column;
+          width: auto;
+
+          h6 {
+            color: gray;
+            margin-top: 0;
+            text-align: center;
+          }
+
+          span {
+            color: black;
+            text-align: center;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+
+    #map {
+      margin-top: -180px;
+    }
+  }
+}
